@@ -3,6 +3,7 @@ import numpy as np
 from tkinter import *
 from PIL import Image, ImageTk
 
+
 class ImageCropGUI:
     def __init__(self, image_path, hashed_name):
         self.original_image = cv2.imread(image_path)
@@ -45,7 +46,6 @@ class ImageCropGUI:
             # self.crop_image.save("cropped_image.jpg")
             self.root.destroy()
 
-
     def on_click(self, event):
         self.top_left = (event.x, event.y)
         self.crop_rect = None
@@ -66,5 +66,3 @@ class ImageCropGUI:
             self.crop_rect = self.canvas.create_rectangle(self.top_left[0], self.top_left[1], self.bottom_right[0],
                                                           self.bottom_right[1], outline="red")
         # print("setting: ", self.top_left[0], self.top_left[1], self.bottom_right[0], self.bottom_right[1])
-
-

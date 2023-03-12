@@ -1,5 +1,4 @@
-from mutagen.id3 import ID3, APIC, error, TIT2, TPE1, TALB
-
+from mutagen.id3 import ID3, APIC, TIT2, TPE1, TALB
 
 
 def modify_mp3(title: str, singer: str, album: str, hashed_path: str):

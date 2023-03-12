@@ -5,6 +5,9 @@ from ymd_prj.sequence.mp3_modify import modify_mp3
 from ymd_prj.sequence.finish import last_check
 import os
 
+if not os.path.isdir(f"./output"):
+    os.makedirs(f"./output")
+
 # 0. User setting
 url = "https://www.youtube.com/watch?v=blA7epJJaR4"
 hashed_name = url[-11:]
