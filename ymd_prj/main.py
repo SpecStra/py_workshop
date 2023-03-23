@@ -9,10 +9,10 @@ if not os.path.isdir(f"./output"):
     os.makedirs(f"./output")
 
 # 0. User setting
-url = "https://www.youtube.com/watch?v=blA7epJJaR4"
+url = "https://www.youtube.com/watch?v=4A1LwCw7SKA"
 hashed_name = url[-11:]
-music_title = "Higher"
-music_singer = "Tobu"
+music_title = "山奥神社の巫女と耳かきボイス"
+music_singer = "バイノーラル6音"
 
 # 1. thum
 download_thum(url)
