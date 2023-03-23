@@ -3,6 +3,12 @@ from mutagen.id3 import ID3, APIC, TALB
 
 src_path = "./src"
 
+if not os.path.exists(src_path):
+    os.makedirs(src_path)
+    print(f"{src_path} directory created.")
+else:
+    print(f"{src_path} directory already exists.")
+
 
 def modify_mp3(mp3_path: str, img_path: str, album: str):
     # mp3 파일 경로
