@@ -38,8 +38,6 @@ def modify_mp3(mp3_path: str, img_path: str, album: str):
     tags.save(file_path)
 
 
-img_name = ""
-
 # src 폴더 내의 각 폴더에 접근하여 파일 목록 출력
 for folder in os.listdir(src_path):
     folder_path = os.path.join(src_path, folder)

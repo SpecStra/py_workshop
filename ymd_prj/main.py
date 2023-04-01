@@ -9,10 +9,10 @@ if not os.path.isdir(f"./output"):
     os.makedirs(f"./output")
 
 # 0. User setting
-url = "https://www.youtube.com/watch?v=4A1LwCw7SKA"
+url = "https://www.youtube.com/watch?v=ayeg9CFlaJA"
 hashed_name = url[-11:]
-music_title = "山奥神社の巫女と耳かきボイス"
-music_singer = "バイノーラル6音"
+music_title = "Healing ASMR from the Forest Witch".replace(" ", "_")
+music_singer = "Ceres Fauna"
 
 # 1. thum
 download_thum(url)
