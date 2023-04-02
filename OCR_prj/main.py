@@ -4,9 +4,10 @@ import pytesseract
 import pyperclip
 import time
 from PIL import ImageGrab
+import requests as req
 
 # 좌표 범위
-x, y, w, h = 611, 747, 1234, 849
+x, y, w, h = 420, 870, 1415, 1030
 
 last_copied_text = ''  # 이전에 클립보드에 복사한 텍스트
 
